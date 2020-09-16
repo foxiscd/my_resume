@@ -41,7 +41,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Резюме', 'url' => ['/resume/index']],
-            ['label' => 'Обо мне', 'url' => ['/resume/about-me']],
+            ['label' => 'Контакты', 'url' => ['/resume/about-me']],
         ],
     ]);
     NavBar::end();
