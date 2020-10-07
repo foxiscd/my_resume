@@ -52,7 +52,11 @@ AppAsset::register($this);
             <div class="col-sm-3" style="float: right">
                 <?php if (!empty($_COOKIE['authToken'])): ?>
                     <h3 style="text-align: center">Добро пожаловать!</h3>
-                    <a href="<?= Url::toRoute('user/logout') ?>" type="button" class="btn btn-primary">
+                    <a href="<?= Url::to(['acc/view']) ?>" type="button" class="btn btn-primary">
+                        Аккаунт
+                    </a>
+                    <a href="<?= Url::to(['user/logout']) ?>" type="button" class="btn btn-primary">
+
                         выйти
                     </a>
                 <?php else: ?>
