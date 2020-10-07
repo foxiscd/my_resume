@@ -14,6 +14,8 @@ use Yii;
 
 class UserController extends Controller
 {
+    public $defaultAction = 'login';
+
     public function actionRegister()
     {
         $user = new User();
@@ -44,7 +46,7 @@ class UserController extends Controller
         $user = new User();
 
         $user->userLogout($user);
-        $this->redirect('index');
+        $this->redirect('/');
     }
 
     public function actionLogin()
@@ -52,13 +54,13 @@ class UserController extends Controller
         $user = new User();
         $model = new LoginForm();
 
-        if (!empty($_COOKIE['authToken'])){
+        if (!empty($_COOKIE['authToken'])) {
             $this->redirect('index');
-        }elseif ($model->load(Yii::$app->request->post())) {
+        } elseif ($model->load(Yii::$app->request->post())) {
             if ($model->validate()) {
                 try {
-                    $user->userLogin(Yii::$app->request->post('LoginForm'));
-                    $this->redirect('index');
+                    $user = $user->userLogin(Yii::$app->request->post('LoginForm'));
+                    $this->redirect(['acc/view', 'id' => $user->id]);
                 } catch (LoginException $e) {
                     Yii::$app->session->setFlash('errorVar', $e->getMessage());
                 }

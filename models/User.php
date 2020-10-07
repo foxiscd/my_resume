@@ -4,6 +4,7 @@
 namespace app\models;
 
 
+use app\components\StringHelper;
 use app\Exceptions\CreateException;
 use app\Exceptions\LoginException;
 use app\models\services\Debug;
@@ -35,6 +36,8 @@ class User extends ActiveRecord
             ['nickname', 'safe'],
         ];
     }
+
+
 
     public function createAuthtoken()
     {
@@ -85,6 +88,12 @@ class User extends ActiveRecord
             throw new LoginException('Пароль не верный');
         }
     }
+
+    public static function findByToken()
+    {
+        return User::findOne($_COOKIE['authToken']);
+    }
+
 
 
 }

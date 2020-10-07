@@ -9,7 +9,7 @@ use \yii\helpers\Html;
 <?php else: ?>
     <div style="display: inline-block">
         <div>
-            <img src="/web/imgs/photo.png" width="200px" alt="Фотография Григорий Александров">
+            <img src="/web/imgs/photo.jpeg" alt="Фотография Григорий Александров">
         </div>
         <div>
             <h1 style="text-align: left">Александров Григорий Сергеевич </h1>
@@ -28,30 +28,62 @@ use \yii\helpers\Html;
         </div>
         <div style="float: left; padding-right: 40px;">
             <h2>Основные навыки</h2>
+            <p>Ниже приведены навыки и материалы, пройденые в ходе самостоятельной подготовки</p>
             <ol>
-                <li>PHP</li>
+                <li><b>PHP 7:</b></li>
+                <span>Пройден курс  <a href="http://www.webshake.ru">www.webshake.ru</a></span><br>
+                <span>Изучен материал книги Дмитрия Котерова <a
+                            href="https://codernet.ru/books/php/php_7_v_podlinnike_dmitrij_koterov/">PHP 7</a></span>
+                <p><b>Приобретенные теоретические и практические знания:</b></p>
                 <ul>
                     <li>MVC</li>
                     <li>ORM</li>
                     <li>PSR</li>
                     <li>Patterns</li>
                 </ul>
+                <br>
 
-                <li>FrameWorks</li>
+                <li><b>FrameWorks:</b></li>
+
                 <ul>
-                    <li>Yii</li>
-                    <li>Symfony</li>
+                    <li>Yii:</li>
+                    <span>Курс <a href="https://php-up.com">Виктора Зинченко</a></span><br>
+                    <a href="https://www.yiiframework.com/doc/guide/2.0/ru">Оффициальная документация</a>
+                    <li>Symfony:</li>
+                    <span>Курс <a href="http://www.webshake.ru">www.webshake.ru</a></span>
                 </ul>
-                <li>GIT</li>
-                <ul>
-                    <li>Bash</li>
-                </ul>
-                <li>Composer</li>
-                <li>Bootstrap</li>
-                <li>javascript (base)</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <br>
+
+                <li><b>MySQL</b></li>
+                <span>Книга Виктора Гольцмана <a href="https://muff.kiev.ua/files/books/MySQL50LibraryProgrammerHoltzman.pdf">MySQL 5.0</a></span><br>
+                <p>Курс <a href="http://www.webshake.ru">www.webshake.ru</a></p>
+
+                <li><b>GIT</b></li>
+                <p>Курс <a href="https://githowto.com/ru"> Githowto</a></p>
+
+                <li><b>Composer</b></li>
+                <p>Курс <a href="http://www.webshake.ru">www.webshake.ru</a></p>
+
+                <li><b>Bootstrap</b></li>
+                <span><a href="https://www.yiiframework.com/doc/guide/2.0/ru">Оффициальная документация</a></span><br>
+                <p><a href="https://www.youtube.com/watch?v=TZSY6rDUDrE&list=PL0lO_mIqDDFUQI5lrRlZfkApMWtJJ7GFE">Видео урок</a></p>
+
+                <li><b>javascript(base) , jquery(base)</b></li>
+                <p><a href="https://www.youtube.com/watch?v=JgIG6d3JsZs&list=PL0lO_mIqDDFUGX9k45bZFuz1ixTvUhd7b">Видео урок</a></p>
+
+                <li><b>HTML</b></li>
+                <span><a href="http://htmlbook.ru/html">Оффициальная документация</a></span><br>
+                <p>Курс <a href="http://www.webshake.ru">www.webshake.ru</a></p>
+
+                <li><b>CSS</b></li>
+                <span><a href="http://htmlbook.ru/html">Оффициальная документация</a></span><br>
+                <p>Курс <a href="http://www.webshake.ru">www.webshake.ru</a></p>
+
             </ol>
+        </div>
+        <div>
+            <h2>Примеры работ</h2>
+            <p>Репозиторий <a href="https://github.com/foxiscd">GitHub</a></p>
         </div>
         <div style="float: left">
             <h2>Личные качества</h2>

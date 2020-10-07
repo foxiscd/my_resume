@@ -13,6 +13,14 @@ $config = [
     ],
     'language' => 'ru',
     'components' => [
+        'urlManager'=> [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'enableStrictParsing' => false,
+            'rules' => [
+                'account/<id:\d+>'=> 'acc/view',
+            ],
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'oa1aGPn3XWzInw0yTHVK1fVXoCfjiNkB',
